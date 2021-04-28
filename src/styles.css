@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#home .wave {
+  height: 85vh;
+  z-index: 5;
+  margin: 0;
+}
+
+.wave {
+  transform: rotate(180deg);
+  left: 0;
+}
+
+#home,
+#experience,
+#contact,
+#details {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+#home,
+#contact {
+  color: white;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.intro h1 {
+  /* text-align: left; */
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.intro h3 {
+  font-size: 1.8rem;
+}
+
+.intro {
+  position: absolute;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+}
+
+.intro h1,
+.intro h3 {
+  line-height: 1.7;
+}
+
+.highlight {
+  font-style: normal;
+  /* color: #43c3fa; */
+  color: #ed003f;
+}
+
+#action-btn {
+  margin-top: 10px;
+  position: relative;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  background: none;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  outline: 0;
+  z-index: 1;
+}
+
+#action-btn:hover {
+  color: white;
+}
+
+#action-btn::before {
+  content: "";
+  /* background abs relative to action-btn */
+  position: absolute;
+  background: #ff0066;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.3s ease-in;
+}
+
+#action-btn:hover::before {
+  right: 0;
+}
+.navbar {
+  /* margin: 0; */
+  position: sticky;
+  z-index: 3;
+  background-color: #140a42;
+  padding: 10px 2%;
+}
+
+.nav-link {
+  color: white !important;
+  opacity: 50% !important;
+}
+
+.navbar #brand,
+.nav-link:hover {
+  color: #ed003f !important;
+  transition: 0.5s;
+}
+.active {
+  color: #ed003f !important;
+}
+
+@media only screen and (max-width: 974px) {
+  .intro {
+    width: 100%;
+  }
+  .intro h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+  .intro h3 {
+    font-size: 1.5rem;
+  }
+  .intro {
+    padding: 12%;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .intro h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .intro h3 {
+    font-size: 1.1rem;
+  }
+}
+
+
