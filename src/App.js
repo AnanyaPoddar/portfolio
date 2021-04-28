@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-
+import Contact from "./components/Contact";
 function MainPage(props) {
   return (
     <div className="App">
       <Home />
+      <Contact />
     </div>
   );
 }
