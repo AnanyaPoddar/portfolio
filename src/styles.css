@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-#home .wave, #details .wave{
+#home .wave, .details-outer .wave{
   transform: rotate(180deg);
 }
 

@@ -41,20 +41,19 @@ export default function Details({
 }) {
   window.scrollTo(0, 0);
   return (
-    <div id="details">
+    <div className= "details-outer">
       <Wave
         className="wave"
         fill="#140a42"
         paused={false}
         options={{
-          height: 50,
-          amplitude: 45,
+          height: 90,
+          amplitude: 35,
           speed: 0.1,
-          points: 5
+          points: 3
         }}
       />
-      <div>{renderDetails(details[id - 1])}</div>
+      <div id="details">{renderDetails(details[id - 1])}</div>
     </div>
   );
-  // return <div id="details">{details.map(renderDetails)}</div>;
 }
