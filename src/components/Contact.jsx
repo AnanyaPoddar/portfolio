@@ -26,12 +26,12 @@ function Contact() {
           height: 20,
           amplitude: 45,
           speed: 0.1,
-          points: 5
+          points: 4
         }}
       />
       <form onSubmit={submitForm}>
-        <h1>Say hello {name}!</h1>
-        <input
+        <h1>Let's Connect {name}!</h1>
+        <input maxLength= "36" 
           onChange={changeName}
           type="text"
           placeholder="Name"
@@ -40,13 +40,11 @@ function Contact() {
         />
         <input type="email" placeholder="Email" required />
         <textarea rows="4" name="comment" placeholder="Your Message" required />
-        {/* <input className="input-msg" type="text" placeholder="Your Message" /> */}
         <p className="submitted">{submitted}</p>
         <Button variant="outline-light" id="action-btn" type="submit">
           Get In Touch
         </Button>
       </form>
-      <Socials />
     </div>
   );
 }

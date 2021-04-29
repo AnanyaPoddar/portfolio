@@ -11,16 +11,19 @@
   margin: 0;
 }
 
-.wave {
+#home .wave, #details .wave{
   transform: rotate(180deg);
-  left: 0;
+}
+
+.wave{
+  margin:0;
 }
 
 #home,
 #experience,
 #contact,
 #details {
-  background-color: transparent;
+  background: transparent;
   position: relative;
   width: 100%;
   z-index: 0;
@@ -35,11 +38,10 @@
 
 h1 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .intro h1 {
-  /* text-align: left; */
   font-size: 2.7rem;
   font-weight: 600;
 }
@@ -107,7 +109,7 @@ h1 {
   /* margin: 0; */
   position: sticky;
   z-index: 3;
-  background-color: #140a42;
+  background: #140a42;
   padding: 10px 2%;
 }
 
@@ -127,16 +129,20 @@ h1 {
 
 /*SOCIALS*/
 
-.socials {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+.socials{
+  background-color: #140a42;
+  width: 100%;
+  margin-bottom:0;
+  list-style-type: none;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.socials li{
+  display: inline-block;
 }
 .socials a img {
   width: 42px;
   height: 42px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
   /* Target colour to filter values: https://codepen.io/sosuke/pen/Pjoqqp */
@@ -156,30 +162,36 @@ h1 {
 /*CONTACT*/
 
 #contact .wave {
-  height: 100vh;
+  height: 90vh;
 }
 
 #contact {
-  height: 100vh;
+  height: 90vh;
   position: relative;
   display: block;
-  text-align: center;
   overflow-y: hidden;
 }
 
 #contact form {
+  text-align: center;
   margin: 0;
   position: absolute;
   width: 290px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-top: 100px;
+  padding-bottom: 10vh;
+}
+
+#contact h1{
+  font-size: 2.2rem;
 }
 
 #contact input,
 #contact textarea {
   border: 1px solid rgba(252, 252, 252, 0.651);
-  background-color: rgba(252, 252, 252, 0.1);
+  background: rgba(252, 252, 252, 0.1);
   border-radius: 3px;
   padding: 10px 15px;
   margin: 0 auto 10px auto;
@@ -208,24 +220,115 @@ h1 {
 
 .submitted {
   color: #ed003f;
+  margin-bottom: 10px;
+}
+
+#contact #action-btn:hover{
+  color: white;
 }
 
 
+/*EXPERIENCE*/
 
-@media only screen and (max-width: 974px) {
-  .intro {
-    width: 100%;
-  }
-  .intro h1 {
-    font-size: 2.3rem;
-    font-weight: 600;
-  }
-  .intro h3 {
-    font-size: 1.5rem;
-  }
-  .intro {
-    padding: 12%;
-  }
+.experience-cards {
+  padding: 0 12%;
+}
+
+#experience h1 {
+  padding: 20px 0 50px;
+  color: #2e1f70;
+}
+
+.exp-title {
+  color: #2e1f70;
+  size: 2rem;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.exp-role {
+  color: black;
+}
+
+#experience .exp-card {
+  background: rgba(0, 0, 0, 0.02);
+  border-bottom: 4px solid #2e1f70;
+  position: relative;
+  display: block;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s;
+  transition-property: box-shadow, transform;
+}
+
+#experience .exp-card:hover {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  text-decoration: none !important;
+}
+
+.col-md-4.col-sm-6 {
+  padding: 0;
+}
+
+.exp-card .exp-langs {
+  color: #ed003f;
+  font-size: 14px;
+}
+
+.exp-card .exp-img{
+  height: 268px;
+}
+
+.status {
+  position: relative;
+  display: inline-block;
+  padding: 7px;
+  float: right;
+  background: #2e1f70;
+  color: white;
+  border-radius: 3px;
+}
+
+/*DETAILS*/
+
+
+#details {
+  padding: 5px 10% 5% 10%;
+}
+
+#details .date {
+  color: #ed003f;
+}
+
+#details h1,
+h5 {
+  color: #2e1f70;
+  display: inline-block;
+}
+
+#details .details-img {
+  width: 50%;
+  border-radius: 5px;
+  float: right;
+  /* border: 2px solid #2e1f70; */
+  box-shadow: 3px solid #2e1f70;
+}
+
+#details .details-desc {
+  width: 50%;
+  padding: 0 50px 20px 0;
+}
+
+#details .details-desc:after,
+#details .details-img:after {
+  clear: both;
+}
+
+#details hr {
+  border-top: 4px solid #2e1f70;
+  width: 70px;
 }
 
 @media only screen and (max-width: 663px) {
@@ -236,6 +339,28 @@ h1 {
   .intro h3 {
     font-size: 1.1rem;
   }
+  .experience-cards {
+    padding: 0 5%;
+  }
 }
 
 
+@media only screen and (max-width: 974px) {
+  .intro {
+    width: 100%;
+    padding: 12%;
+  }
+  .intro h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+  .intro h3{
+    font-size: 1.5rem;
+  }
+  #contact h1{
+    font-size: 2rem;
+  }
+  /* #contact form{
+    padding-bottom: 30px;
+  } */
+}

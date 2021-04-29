@@ -57,6 +57,7 @@ export default function NavbarDefault() {
               spy={true}
               smooth={true}
               duration={500}
+              scroll={(el) => scrollWithOffset(el, -75)}
               exact
               className="nav-link"
             >
