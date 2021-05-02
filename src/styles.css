@@ -331,6 +331,31 @@ h5 {
   width: 70px;
 }
 
+
+/*SCROLL TO TOP*/
+.scrollToTop{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+  z-index: 5;
+}
+.scrollBtn{
+  animation: fadeIn 0.9s;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.scrollBtn:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 @media only screen and (max-width: 663px) {
   .intro h1 {
     font-size: 2rem;

@@ -8,10 +8,12 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Details from "./components/Details";
 import Socials from "./components/Socials";
+import ScrollToTop from "./components/ScrollToTop";
 
 function MainPage(props) {
   return (
     <div className="App">
+      <ScrollToTop/>
       <Home />
       <Experience />
       <Contact />
