@@ -1,6 +1,6 @@
 import "./styles.css";
 import React, { useRef } from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -23,7 +23,7 @@ function MainPage(props) {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <ScrollToTop/>
       <Navbar />
       <Switch>

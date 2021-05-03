@@ -1,7 +1,7 @@
 import "../styles.css";
 import { Navbar, Nav } from "react-bootstrap";
 import React from "react";
-import { NavHashLink as Link } from "react-router-hash-link";
+import { HashLink as Link } from "react-router-hash-link";
 import resume from "../images/CVAnanyaPoddar.pdf";
 
 export default function NavbarDefault() {
