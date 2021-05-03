@@ -92,15 +92,13 @@ const details = [
     title: "EcoBlock",
     date: "Mar 2021",
     role: "Hackathon Project",
-    links: 1,
-    btns: ["DevPost", "Github"],
     project: true,
+    github: "https://github.com/Johnson-Su/EcoBlock" ,
+    devpost: "https://devpost.com/software/ecoblock" ,
     description: "I worked in a group of four to create Ecoblock, an app that provides a sustainable alternative method of coin \
     production. In addition to using up to 99% less energy than cryptoccurencies such as bitcoin, it allows users to manage and \
     visualize their profit, and rewards users for using certified green energy sources using the Google Cloud Vision API.<br/><br/>\
     I created the frontend using Flutter, and configured API calls including sending requests and parsing responses.",
-    // learned:
-    // "I learned to wear many hats because it was a startup. This meant not only making programming decisions as a developer, but making UI/UX decisions, providing demos, etc."
   },
   {
     id: 4,
@@ -108,13 +106,11 @@ const details = [
     title: "Mock Shell Application",
     date: "Jun 2020 - Jul 2020",
     role: "Group Project",
-    links: 0,
     project: true,
-    description: "I lead an Agile team of four to created a Mock Shell program in Java. In addition to mimicking file system management and \
-    basic shell commands, we utilized external APIs to perform text-to-speech, and recursive search and sort functionality.<br/></br> \
+    description: "I lead an <strong>Agile</strong> team of four to created a Mock Shell program in <strong>Java</strong>. \
+    In addition to mimicking file system management and basic shell commands, we utilized external APIs to perform text-to-speech, \
+    and recursive search and sort functionality.<br/></br> \
     I strictly adhered to test-driven-development and OOP principles, and used techniques such as dependency-injection.",
-    // languages: "Java / OOP / TDD",
-    // status: "Completed!"
   },
   {
     id: 5,
@@ -122,9 +118,8 @@ const details = [
     img: portfolio,
     date: "Apr 2021",
     role: "Solo Project",
-    links: 1,
-    btns: ["Github"],
     project: true,
+    github: "https://github.com/AnanyaPoddar/portfolio",
     description: "You are here! I utilized <strong>React</strong> and <strong>Firebase</strong> to create a unique portfolio site \
     to showcase my work with a clean UI and unique, animated wave component. I learned the basics of React routing, hooks, states, props, \
     and components. I also utilized declarative programming, and connected it to a database to easily collect contact information.",

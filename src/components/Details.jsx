@@ -2,6 +2,8 @@ import {React, Fragment} from "react";
 import { details } from "../projects.js";
 import Wave from "react-wavify";
 import Navbar from "./Navbar";
+import Github from "../images/github.png";
+import Devpost from "../images/devpost.png";
 
 function DetailPage(props) {
   return (
@@ -15,7 +17,13 @@ function DetailPage(props) {
         <h5>Overview</h5>
         <div className="details-desc" dangerouslySetInnerHTML={{__html:props.desc}} />
         {!props.project && <h5>What I Learned</h5>}
-        <p className="details-desc">{props.learned}</p>
+        {!props.project && <p className="details-desc">{props.learned}</p>}
+        {props.github && <a target="_blank" href={props.github}>
+          <img src={Github} alt="Github" />
+        </a>}
+        {props.devpost && <a target="_blank" href={props.devpost}>
+          <img src={Devpost} alt="Devpost" />
+        </a>}
       </div>
     </div>
   );
@@ -31,6 +39,8 @@ function renderDetails(exp) {
       desc={exp.description}
       learned={exp.learned}
       project={exp.project}
+      github={exp.github}
+      devpost={exp.devpost}
     />
   );
 }
