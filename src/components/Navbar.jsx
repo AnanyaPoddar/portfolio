@@ -2,6 +2,7 @@ import "../styles.css";
 import { Navbar, Nav } from "react-bootstrap";
 import React from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
+import resume from "../images/CVAnanyaPoddar.pdf";
 
 export default function NavbarDefault() {
   const scrollWithOffset = (el, offset) => {
@@ -21,13 +22,23 @@ export default function NavbarDefault() {
         bg="navbar"
         variant="dark"
       >
-        {/* <LinkContainer to="/"> */}
-        <Navbar.Brand id="brand">A P</Navbar.Brand>
-        {/* </LinkContainer> */}
+        <Navbar.Brand >            
+          <Link id="brand"
+              activeClass="active"
+              to="/#home"
+              spy={true}
+              smooth={true}
+              scroll={(el) => scrollWithOffset(el, 75)}
+              exact
+              // className="nav-link"
+            >
+              A P
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Link
+            {/* <Link
               activeClass="active"
               to="/#home"
               spy={true}
@@ -37,7 +48,7 @@ export default function NavbarDefault() {
               className="nav-link"
             >
               Home
-            </Link>
+            </Link> */}
 
             <Link
               activeClass="active"
@@ -63,6 +74,7 @@ export default function NavbarDefault() {
             >
               Contact
             </Link>
+              <a className="nav-link" href={resume}target="_blank">Resume</a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

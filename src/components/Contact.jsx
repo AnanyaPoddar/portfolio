@@ -2,18 +2,26 @@ import React, { useState, useRef } from "react";
 import { Button } from "react-bootstrap";
 import Socials from "./Socials";
 import Wave from "react-wavify";
+import db from "../firebase";
 
 function Contact() {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
   const [submitted, setHeading] = useState("");
 
-  function changeName(event) {
-    setName(event.target.value);
-  }
-
-  function submitForm(event) {
-    setHeading("Thanks for your message :)");
-    event.preventDefault();
+  const submitForm = (e) => {
+    e.preventDefault();
+    db.collection("contacts").add({
+      name: name,
+      email: email,
+      msg: msg
+    })
+    .catch((e) => {
+        alert(e.message);
+    })
+    setHeading("Thanks for your message " + name + " :)");
+    setName(''); setEmail(''); setMsg('');
   }
 
   return (
@@ -32,14 +40,22 @@ function Contact() {
       <form onSubmit={submitForm}>
         <h1>Let's Connect {name}!</h1>
         <input maxLength= "36" 
-          onChange={changeName}
+          onChange={(e)=> setName(e.target.value)}
           type="text"
           placeholder="Name"
           value={name}
           required
         />
-        <input type="email" placeholder="Email" required />
-        <textarea rows="4" name="comment" placeholder="Your Message" required />
+        <input type="email" placeholder="Email" required           
+          onChange={(e)=> setEmail(e.target.value)}
+          type="text"
+          value={email}
+          required/>
+        <textarea rows="4" name="comment" placeholder="Your Message" required           
+        onChange={(e)=> setMsg(e.target.value)}
+          type="text"
+          value={msg}
+          required/>
         <p className="submitted">{submitted}</p>
         <Button variant="outline-light" id="action-btn" type="submit">
           Get In Touch

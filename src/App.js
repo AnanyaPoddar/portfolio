@@ -13,7 +13,6 @@ import ScrollToTop from "./components/ScrollToTop";
 function MainPage(props) {
   return (
     <div className="App">
-      <ScrollToTop/>
       <Home />
       <Experience />
       <Contact />
@@ -25,6 +24,7 @@ function MainPage(props) {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar />
       <Switch>
         <Route

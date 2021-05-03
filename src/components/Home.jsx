@@ -1,8 +1,15 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import Navbar from "./Navbar";
 import Wave from "react-wavify";
+import { NavHashLink as Link } from "react-router-hash-link";
 function Home() {
+  const scrollWithOffset = (el, offset) => {
+    window.scroll({
+      top: el.offsetTop - offset,
+      left: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <div id="home">
       <Wave
@@ -24,9 +31,15 @@ function Home() {
           A <em className="highlight">Software Developer</em> and Computer
           Science student at the University of Toronto.
         </h3>
-        <Button variant="outline-light" id="action-btn">
-          Get Started!
-        </Button>
+          <Link className="getStarted"
+              to="/#experience"
+              spy={true}
+              smooth={true}
+              scroll={(el) => scrollWithOffset(el, 75)}
+              exact={true}
+            >
+             <Button variant="outline-light" id="action-btn"> Get Started!</Button>
+          </Link>
       </div>
     </div>
   );

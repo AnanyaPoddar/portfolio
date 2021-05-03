@@ -6,7 +6,7 @@ export default function ScrollButton(){
     const [visible, setVisibility] = useState(false);
 
     const toggleVisibility = () => {
-        if (window.pageYOffset > window.screen.height*0.9) {
+        if (window.pageYOffset > 20) {
           setVisibility(true);
         } else {
           setVisibility(false);

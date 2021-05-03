@@ -1,4 +1,4 @@
-import React from "react";
+import {React, Fragment} from "react";
 import { details } from "../projects.js";
 import Wave from "react-wavify";
 import Navbar from "./Navbar";
@@ -7,14 +7,14 @@ function DetailPage(props) {
   return (
     <div className="detailPage">
       <h6 className="date">{props.date}</h6>
-      <img className="details-img" src={props.img} alt="" />
       <h1>{props.title}</h1>
       <h6>{props.role}</h6>
-      <hr />
+      <br/>
       <div className="details-info">
-        <h5>Summary</h5>
-        <p className="details-desc">{props.desc}</p>
-        <h5>What I Learned</h5>
+      <img className="details-img" src={props.img} alt="" />
+        <h5>Overview</h5>
+        <div className="details-desc" dangerouslySetInnerHTML={{__html:props.desc}} />
+        {!props.project && <h5>What I Learned</h5>}
         <p className="details-desc">{props.learned}</p>
       </div>
     </div>
@@ -30,15 +30,12 @@ function renderDetails(exp) {
       img={exp.img}
       desc={exp.description}
       learned={exp.learned}
+      project={exp.project}
     />
   );
 }
 
-export default function Details({
-  match: {
-    params: { id }
-  }
-}) {
+export default function Details({match: {params: { id }}}) {
   window.scrollTo(0, 0);
   return (
     <div className= "details-outer">

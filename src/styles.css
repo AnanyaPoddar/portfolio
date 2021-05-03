@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: 'Inter', sans-serif;
 }
 
 #home .wave {
@@ -17,6 +18,7 @@
 
 .wave{
   margin:0;
+  width: 110% !important;
 }
 
 #home,
@@ -27,7 +29,6 @@
   position: relative;
   width: 100%;
   z-index: 0;
-  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 #home,
@@ -84,9 +85,6 @@ h1 {
   z-index: 1;
 }
 
-#action-btn:hover {
-  color: white;
-}
 
 #action-btn::before {
   content: "";
@@ -105,8 +103,8 @@ h1 {
 #action-btn:hover::before {
   right: 0;
 }
+
 .navbar {
-  /* margin: 0; */
   position: sticky;
   z-index: 3;
   background: #140a42;
@@ -122,6 +120,7 @@ h1 {
 .nav-link:hover {
   color: #ed003f !important;
   transition: 0.5s;
+  text-decoration: none;
 }
 .active {
   color: #ed003f !important;
@@ -223,7 +222,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-#contact #action-btn:hover{
+#action-btn:hover{
   color: white;
 }
 
@@ -259,6 +258,7 @@ h1 {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   transition-duration: 0.5s;
   transition-property: box-shadow, transform;
+  min-height: 130px;
 }
 
 #experience .exp-card:hover {
@@ -278,7 +278,7 @@ h1 {
 }
 
 .exp-card .exp-img{
-  height: 268px;
+  max-height: 255px;
 }
 
 .status {
@@ -293,9 +293,8 @@ h1 {
 
 /*DETAILS*/
 
-
 #details {
-  padding: 5px 10% 5% 10%;
+  padding: 0 10% 5% 10%;
 }
 
 #details .date {
@@ -303,17 +302,29 @@ h1 {
 }
 
 #details h1,
-h5 {
-  color: #2e1f70;
+#details h5 {
   display: inline-block;
+  padding: 0.5px 0;
+  font-weight: bold;
+}
+
+#details h1{
+  color: #2e1f70;
 }
 
 #details .details-img {
   width: 50%;
   border-radius: 5px;
   float: right;
-  /* border: 2px solid #2e1f70; */
-  box-shadow: 3px solid #2e1f70;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+ul{
+
+  list-style: square;
+  padding-left: 15px;
+  padding-top: 5px;
 }
 
 #details .details-desc {
@@ -326,10 +337,10 @@ h5 {
   clear: both;
 }
 
-#details hr {
+/* #details hr {
   border-top: 4px solid #2e1f70;
   width: 70px;
-}
+} */
 
 
 /*SCROLL TO TOP*/
@@ -376,7 +387,7 @@ h5 {
     padding: 12%;
   }
   .intro h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 600;
   }
   .intro h3{
