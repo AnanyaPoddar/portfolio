@@ -18,19 +18,18 @@ export default function NavbarDefault() {
       <Navbar
         collapseOnSelect
         expand="sm"
-        className="navbar"
-        bg="navbar"
+        // className="navbar"
+        id="navbar"
         variant="dark"
       >
         <Navbar.Brand >            
           <Link id="brand"
               activeClass="active"
-              to="/#home"
+              to="/"
               spy={true}
               smooth={true}
               scroll={(el) => scrollWithOffset(el, 75)}
               exact
-              // className="nav-link"
             >
               A P
           </Link>

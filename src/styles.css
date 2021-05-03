@@ -104,20 +104,20 @@ h1 {
   right: 0;
 }
 
-.navbar {
+#navbar {
   position: sticky;
   z-index: 3;
   background: #140a42;
   padding: 10px 2%;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+#navbar .nav-link {
   color: white !important;
   opacity: 50% !important;
 }
 
-.navbar #brand,
-.nav-link:hover {
+#navbar #brand,
+#navbar .nav-link:hover {
   color: #ed003f !important;
   transition: 0.5s;
   text-decoration: none;
