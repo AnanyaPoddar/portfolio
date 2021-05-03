@@ -111,7 +111,7 @@ h1 {
   padding: 10px 2%;
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: white !important;
   opacity: 50% !important;
 }
