@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b5e5d8c6.chunk.css",
-    "main.js": "/portfolio/static/js/main.e981e47d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e981e47d.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.b2d4924f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b2d4924f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f76644d1.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f76644d1.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/portfolio/static/css/2.4c97ca4f.chunk.css",
@@ -14,8 +14,8 @@
     "static/css/2.4c97ca4f.chunk.css.map": "/portfolio/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.b5e5d8c6.chunk.css.map": "/portfolio/static/css/main.b5e5d8c6.chunk.css.map",
     "static/js/2.10ff7448.chunk.js.LICENSE.txt": "/portfolio/static/js/2.10ff7448.chunk.js.LICENSE.txt",
-    "static/media/CVAnanyaPoddar.bf697c99.pdf": "/portfolio/static/media/CVAnanyaPoddar.bf697c99.pdf",
-    "static/media/dashboard.bdfbb04c.jpg": "/portfolio/static/media/dashboard.bdfbb04c.jpg",
+    "static/media/CVAnanyaPoddar.1080774a.pdf": "/portfolio/static/media/CVAnanyaPoddar.1080774a.pdf",
+    "static/media/dashboard.8cd2634f.jpg": "/portfolio/static/media/dashboard.8cd2634f.jpg",
     "static/media/dsp-ssp.4d9f7c57.png": "/portfolio/static/media/dsp-ssp.4d9f7c57.png",
     "static/media/ecoblock-details.60a5ffa5.png": "/portfolio/static/media/ecoblock-details.60a5ffa5.png",
     "static/media/ecoblock.38ff37eb.gif": "/portfolio/static/media/ecoblock.38ff37eb.gif",
@@ -31,6 +31,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.10ff7448.chunk.js",
     "static/css/main.b5e5d8c6.chunk.css",
-    "static/js/main.e981e47d.chunk.js"
+    "static/js/main.b2d4924f.chunk.js"
   ]
 }
