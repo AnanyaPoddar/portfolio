@@ -20,7 +20,7 @@ function Contact() {
     .catch((e) => {
         alert(e.message);
     })
-    setHeading("Thanks for your message " + name + " :)");
+    setHeading("Thanks for your message :)");
     setName(''); setEmail(''); setMsg('');
   }
 
