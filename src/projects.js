@@ -5,7 +5,6 @@ import shell from "./images/shell.jpg";
 import dashboard from "./images/dashboard.jpg";
 import ecoblockDetails from "./images/ecoblock-details.png";
 import portfolio from "./images/portfolio-full.png";
-import here from "./images/here2.svg";
 const experience = [
   {
     id: 1,
