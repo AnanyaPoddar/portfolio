@@ -175,7 +175,7 @@ h1 {
   text-align: center;
   margin: 0;
   position: absolute;
-  width: 290px;
+  width: 35%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -275,10 +275,6 @@ h1 {
 .exp-card .exp-langs {
   color: #ed003f;
   font-size: 14px;
-}
-
-.exp-card .exp-img{
-  max-height: 255px;
 }
 
 .status {
