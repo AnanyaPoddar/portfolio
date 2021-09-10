@@ -175,7 +175,7 @@ h1 {
   text-align: center;
   margin: 0;
   position: absolute;
-  width: 290px;
+  width: 35%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -277,9 +277,6 @@ h1 {
   font-size: 14px;
 }
 
-.exp-card .exp-img{
-  max-height: 255px;
-}
 
 .status {
   position: relative;
@@ -349,11 +346,6 @@ h1 {
 #details .details-img:after {
   clear: both;
 }
-
-/* #details hr {
-  border-top: 4px solid #2e1f70;
-  width: 70px;
-} */
 
 
 /*SCROLL TO TOP*/
