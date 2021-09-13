@@ -346,12 +346,6 @@ h1 {
   clear: both;
 }
 
-/* #details hr {
-  border-top: 4px solid #2e1f70;
-  width: 70px;
-} */
-
-
 /*SCROLL TO TOP*/
 .scrollToTop{
   position: fixed;
@@ -405,7 +399,7 @@ h1 {
   #contact h1{
     font-size: 2rem;
   }
-  /* #contact form{
-    padding-bottom: 30px;
-  } */
+  #contact form{
+    width: 290px;
+  }
 }
