@@ -1,55 +1,60 @@
-import ix from "./images/dsp-ssp.png";
-import gn from "./images/gn3.png";
-import ecoblock from "./images/ecoblock.gif";
-import shell from "./images/shell.jpg";
 import dashboard from "./images/dashboard.jpg";
+import ix from "./images/ansible.jpg";
 import ecoblockDetails from "./images/ecoblock-details.png";
+import gn from "./images/gn3.png";
 import portfolio from "./images/portfolio-full.png";
+import shell from "./images/shell.jpg";
+import utoronto from "./images/utoronto.png";
+import manulife from "./images/manulife2.png";
 const experience = [
   {
     id: 1,
-    img: ix,
-    title: "Index Exchange",
-    role: "Software Engineer Intern",
-    languages: "Kubernetes / Docker / CI&CD / Ansible / Helm",
-    status: "Completed!"
+    img: manulife,
+    link: "https://www.manulife.com/",
+    title: "Manulife",
+    role: "Software Developer Intern",
+    languages: ["Java", "Spring Boot", "React", "Docker", "CI&CD"],
+    status: "In Progress",
+    date: "Aug 2021 - Present"
   },
   {
     id: 2,
-    img: gn,
-    title: "Giants Network Inc.",
-    role: "Software Developer",
-    languages: "HTML / CSS / Javascript",
-    status: "In Progress"
+    img: utoronto,
+    link: "https://www.utsc.utoronto.ca/cms/computer-science-mathematics-statistics",
+    title: "University of Toronto",
+    role: "Teaching Assistant",
+    status: "In Progress",
+    date: "Sept 2021 - Present"
   },
   {
     id: 3,
-    img: ecoblock,
-    title: "EcoBlock",
-    role: "Hackathon Project",
-    languages: "Flutter / Dart / Google Cloud Vision API / Firebase",
-    status: "Completed!"
+    img: ix,
+    link: "https://www.indexexchange.com/",
+    title: "Index Exchange",
+    role: "Software Engineer Intern",
+    languages: ["Kubernetes", "Docker", "CI&CD", "Ansible", "Helm"],
+    status: "Completed!",
+    date: "Jan 2021 - Apr-2021",
+    description:
+      "Developed and deployed UI to centralize automation and management of hundreds of weekly deployments for 250+ engineering employees."
   },
   {
     id: 4,
-    img: shell,
-    title: "Mock Shell Application",
-    role: "Group Project",
-    languages: "Java / OOP / TDD",
-    status: "Completed!"
-  },
-  {
-    id: 5,
-    title: "Portfolio Site",
-    role: "",
-    languages: "React / Firebase",
-    status: "In Progress"
-  },
+    img: gn,
+    link: "https://www.linkedin.com/company/giants-network-inc",
+    title: "Giants Network Inc.",
+    role: "Software Developer",
+    languages: ["React", "NodeJS", "Firebase"],
+    status: "In Progress",
+    date: "Sept 2020 - Present",
+    description:
+      "Created portal website that acts as primary platform for interaction between 20+ organizations and 300+ youth leaders"
+  }
 ];
 
 const details = [
   {
-    id: 1,
+    id: 3,
     img: dashboard,
     title: "Index Exchange",
     date: "Jan 2021 - Apr 2021",
@@ -71,7 +76,7 @@ const details = [
       common Agile tools such as Jira and Confluence."
   },
   {
-    id: 2,
+    id: 4,
     img: gn,
     title: "Giants Network Inc.",
     date: "Sept 2020 - Present",
@@ -85,47 +90,48 @@ const details = [
     learned:
       "I learned to wear many hats because it was a startup. This meant not only making programming decisions as a developer,\
        but making UI/UX decisions, providing demos, etc."
-  },
-  {
-    id: 3,
-    img: ecoblockDetails,
-    title: "EcoBlock",
-    date: "Mar 2021",
-    role: "Hackathon Project",
-    project: true,
-    github: "https://github.com/Johnson-Su/EcoBlock" ,
-    devpost: "https://devpost.com/software/ecoblock" ,
-    description: "I worked in a group of four to create Ecoblock, an app that provides a sustainable alternative method of coin \
-    production. In addition to using up to 99% less energy than cryptoccurencies such as bitcoin, it allows users to manage and \
-    visualize their profit, and rewards users for using certified green energy sources using the Google Cloud Vision API.<br/><br/>\
-    I created the frontend using Flutter, and configured API calls including sending requests and parsing responses.",
-  },
-  {
-    id: 4,
-    img: shell,
-    title: "Mock Shell Application",
-    date: "Jun 2020 - Jul 2020",
-    role: "Group Project",
-    project: true,
-    description: "I lead an <strong>Agile</strong> team of four to created a Mock Shell program in <strong>Java</strong>. \
-    In addition to mimicking file system management and basic shell commands, we utilized external APIs to perform text-to-speech, \
-    and recursive search and sort functionality.<br/></br> \
-    I strictly adhered to test-driven-development and OOP principles, and used techniques such as dependency-injection.",
-  },
-  {
-    id: 5,
-    title: "Portfolio Site",
-    img: portfolio,
-    date: "Apr 2021",
-    role: "Solo Project",
-    project: true,
-    github: "https://github.com/AnanyaPoddar/portfolio",
-    description: "You are here! I utilized <strong>React</strong> and <strong>Firebase</strong> to create a unique portfolio site \
-    to showcase my work with a clean UI and unique, animated wave component. I learned the basics of React routing, hooks, states, props, \
-    and components. I also utilized declarative programming, and connected it to a database to easily collect contact information.",
-    // languages: "React",
-    // status: "In Progress"
   }
+  // {
+  //   id: 3,
+  //   img: ecoblockDetails,
+  //   title: "EcoBlock",
+  //   date: "Mar 2021",
+  //   role: "Hackathon Project",
+  //   project: true,
+  //   github: "https://github.com/Johnson-Su/EcoBlock",
+  //   devpost: "https://devpost.com/software/ecoblock",
+  //   description: "I worked in a group of four to create Ecoblock, an app that provides a sustainable alternative method of coin \
+  //   production. In addition to using up to 99% less energy than cryptoccurencies such as bitcoin, it allows users to manage and \
+  //   visualize their profit, and rewards users for using certified green energy sources using the Google Cloud Vision API.<br/><br/>\
+  //   I created the frontend using Flutter, and configured API calls including sending requests and parsing responses.",
+  // },
+  // {
+  //   id: 4,
+  //   img: shell,
+  //   title: "Mock Shell Application",
+  //   date: "Jun 2020 - Jul 2020",
+  //   role: "Group Project",
+  //   project: true,
+  //   description: "I lead an <strong>Agile</strong> team of four to created a Mock Shell program in <strong>Java</strong>. \
+  //   In addition to mimicking file system management and basic shell commands, we utilized external APIs to perform text-to-speech, \
+  //   and recursive search and sort functionality.<br/></br> \
+  //   I strictly adhered to test-driven-development and OOP principles, and used techniques such as dependency-injection.",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Portfolio Site",
+  //   img: portfolio,
+  //   date: "Apr 2021",
+  //   role: "Solo Project",
+  //   project: true,
+  //   github: "https://github.com/AnanyaPoddar/portfolio",
+  //   description: "You are here! I utilized <strong>React</strong> and <strong>Firebase</strong> to create a unique portfolio site \
+  //   to showcase my work with a clean UI and unique, animated wave component. I learned the basics of React routing, hooks, states, props, \
+  //   and components. I also utilized declarative programming, and connected it to a database to easily collect contact information.",
+  //   // languages: "React",
+  //   // status: "In Progress"
+  // }
 ];
 
 export { experience, details };
+
