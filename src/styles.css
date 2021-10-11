@@ -306,7 +306,7 @@ h1 .highlight{
   color: #4e4a67;
 }
 
-.exp-role{
+.exp-role, .proj-title{
   font-size: 27px;
   font-weight: 700;
   color: #2e1f70;
@@ -358,6 +358,7 @@ h1 .highlight{
   }
   .exp-img{
     transform: translateY(-50%);
+    height: 250px;
     width: 80%;
   }
   .exp-card-body{
@@ -443,6 +444,12 @@ h1 .highlight{
   }
 }
 
+@media screen and (max-width: 754px) {
+  .proj-img{
+    height: 250px;
+  }
+}
+
 @media (min-width: 1600px){
   #projects{
     padding: 30px 8%;
@@ -492,24 +499,10 @@ h1 .highlight{
   100% {opacity:1;}
 }
 
-@media only screen and (max-width: 663px) {
-  .intro h1 {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  .intro h3 {
-    font-size: 1.1rem;
-  }
-  .experience-cards {
-    padding: 0 5%;
-  }
-}
-
-
 @media only screen and (max-width: 974px) {
   .intro {
     width: 96%;
-    padding: 12%;
+    padding: 8%;
   }
   .intro h1 {
     font-size: 2rem;
@@ -520,5 +513,18 @@ h1 .highlight{
   }
   #contact h1{
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .intro h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .intro h3 {
+    font-size: 1.1rem;
+  }
+  .experience-cards {
+    padding: 0 5%;
   }
 }
