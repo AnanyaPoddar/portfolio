@@ -114,13 +114,14 @@ h1 .highlight{
   padding: 10px 2%;
 }
 
-#root #navbar .nav-link {
-  color: white !important;
-  opacity: 50% !important;
+#root #navbar .nav-link a {
+  color: white;
+  opacity: 90%;
+  text-decoration:none;
 }
 
 #navbar #brand,
-#navbar .nav-link:hover {
+#navbar .nav-link a:hover {
   color: #ed003f !important;
   transition: 0.5s;
   text-decoration: none;

@@ -14,11 +14,10 @@ export default function NavbarDefault() {
   };
 
   return (
-    <div>
+    <div id="navbar">
       <Navbar
         collapseOnSelect
         expand="sm"
-        id="navbar"
         variant="dark"
       >
         <Navbar.Brand >
@@ -36,45 +35,48 @@ export default function NavbarDefault() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Link
-              activeClass="active"
-              to="/#experience"
-              spy={true}
-              smooth={true}
-              duration={500}
-              scroll={(el) => scrollWithOffset(el, 75)}
-              exact
-              className="nav-link"
-            >
-              Experience
-            </Link>
-            <Link
-              activeClass="active"
-              to="/#projects"
-              spy={true}
-              smooth={true}
-              duration={500}
-              exact
-              className="nav-link"
-            >
-              Projects
-            </Link>
-            <Link
-              activeClass="active"
-              to="/#contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              scroll={(el) => scrollWithOffset(el, -75)}
-              exact
-              className="nav-link"
-            >
-              Contact
-            </Link>
-            <a className="nav-link" href={resume} target="_blank">Resume</a>
+            <div className="nav-link">
+              <Link
+                // activeClass="active"
+                to="/#experience"
+                spy={true}
+                smooth={true}
+                duration={500}
+                scroll={(el) => scrollWithOffset(el, 75)}
+                exact
+              >
+                Experience
+              </Link>
+            </div>
+            <div className="nav-link">
+              <Link
+                activeClass="active"
+                to="/#projects"
+                spy={true}
+                smooth={true}
+                duration={500}
+                exact
+              >
+                Projects
+              </Link>
+            </div>
+            <div className="nav-link">
+              <Link
+                activeClass="active"
+                to="/#contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+                scroll={(el) => scrollWithOffset(el, -75)}
+                exact
+              >
+                Contact
+              </Link>
+            </div>
+            <div className="nav-link"><a href={resume} target="_blank">Resume</a></div>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    </div>
+      </Navbar >
+    </div >
   );
 }
