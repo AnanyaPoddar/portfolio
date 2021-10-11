@@ -18,37 +18,24 @@ export default function NavbarDefault() {
       <Navbar
         collapseOnSelect
         expand="sm"
-        // className="navbar"
         id="navbar"
         variant="dark"
       >
-        <Navbar.Brand >            
+        <Navbar.Brand >
           <Link id="brand"
-              activeClass="active"
-              to="/"
-              spy={true}
-              smooth={true}
-              scroll={(el) => scrollWithOffset(el, 75)}
-              exact
-            >
-              A P
+            activeClass="active"
+            to="/"
+            spy={true}
+            smooth={true}
+            scroll={(el) => scrollWithOffset(el, 75)}
+            exact
+          >
+            A P
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            {/* <Link
-              activeClass="active"
-              to="/#home"
-              spy={true}
-              smooth={true}
-              scroll={(el) => scrollWithOffset(el, 75)}
-              exact
-              className="nav-link"
-            >
-              Home
-            </Link> */}
-
             <Link
               activeClass="active"
               to="/#experience"
@@ -63,6 +50,17 @@ export default function NavbarDefault() {
             </Link>
             <Link
               activeClass="active"
+              to="/#projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              exact
+              className="nav-link"
+            >
+              Projects
+            </Link>
+            <Link
+              activeClass="active"
               to="/#contact"
               spy={true}
               smooth={true}
@@ -73,7 +71,7 @@ export default function NavbarDefault() {
             >
               Contact
             </Link>
-              <a className="nav-link" href={resume}target="_blank">Resume</a>
+            <a className="nav-link" href={resume} target="_blank">Resume</a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

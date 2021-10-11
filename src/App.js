@@ -6,7 +6,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
-import Details from "./components/Details";
+import Projects from "./components/Projects";
+// import Details from "./components/Details";
 import Socials from "./components/Socials";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -14,8 +15,9 @@ function MainPage(props) {
   return (
     <div className="App">
       <Home />
-      <Experience />
-      <Contact />
+      <Experience className="section" />
+      <Projects className="section" />
+      <Contact className="section" />
       <Socials />
     </div>
   );
@@ -24,14 +26,14 @@ function MainPage(props) {
 export default function App() {
   return (
     <Router basename='/'>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Navbar />
       <Switch>
-        <Route
+        {/* <Route
           exact
           path="/details/:id"
           render={(props) => <Details {...props} />}
-        />
+        /> */}
         <Route exact path="/" component={MainPage} />
       </Switch>
     </Router>

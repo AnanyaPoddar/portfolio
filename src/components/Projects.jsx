@@ -1,44 +1,52 @@
-import React from "react";
-import { experience } from "../projects.js";
-import { Card, CardDeck, Button, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Col, Row, Card } from "react-bootstrap";
+import Devpost from "../images/devpost.png";
+import Github from "../images/github.png";
+import { projects } from "../projects.js";
 function ProjectCard(props) {
     return (
-        <Col sm={6} md={6}>
-            <Link style={{ textDecoration: "none" }} to={`/details/${props.id}`}>
-                <Card className="exp-card">
-                    <div className="card-top">
-                        <Card.Img className="exp-img" variant="top" src={props.img} />
+        <Col lg={6} className="proj-col">
+            {/* <Link style={{ textDecoration: "none" }} to={`/details/${props.id}`}> */}
+            <div className="proj-card">
+                <img className="proj-img" src={props.img} />
+                <Card.Body className="proj-card-body">
+                    <h6 className="proj-type">{props.type}</h6>
+                    <h4 className="proj-title">{props.title}</h4>
+                    <p className="proj-desc">{props.desc}</p>
+                    <ul className="langs">{props.langs && props.langs.map((lang) => <li className="lang">{lang}</li>)}</ul>
+                    <div className="proj-links">
+                        {props.github && <a target="_blank" href={props.github}>
+                            <img src={Github} alt="Github" />
+                        </a>}
+                        {props.devpost && <a target="_blank" href={props.devpost}>
+                            <img src={Devpost} alt="Devpost" />
+                        </a>}
                     </div>
-                    <Card.Body>
-                        <div className="status">{props.status}</div>
-                        <h4 className="exp-title">{props.title}</h4>
-                        <Card.Text className="exp-role">{props.role}</Card.Text>
-                        <Card.Text className="exp-langs">{props.langs}</Card.Text>
-                    </Card.Body>
-                </Card>
-            </Link>
+                </Card.Body>
+            </div>
+            {/* </Link> */}
         </Col>
     );
 }
 function Project() {
     return (
-        <div id="experience">
-            <h1>Projects</h1>
-            <CardDeck className="experience-cards">
-                {experience.map((exp) => (
+        <div id="projects">
+            <h1 className="heading"><span>Projects</span></h1>
+            <Row className="project-cards">
+                {projects.map((proj) => (
                     <ProjectCard
-                        key={exp.id}
-                        id={exp.id}
-                        img={exp.img}
-                        title={exp.title}
-                        role={exp.role}
-                        desc={exp.description}
-                        langs={exp.languages}
-                        status={exp.status}
+                        key={proj.id}
+                        id={proj.id}
+                        img={proj.img}
+                        title={proj.title}
+                        type={proj.type}
+                        desc={proj.description}
+                        langs={proj.languages}
+                        github={proj.github}
+                        devpost={proj.devpost}
                     />
                 ))}
-            </CardDeck>
+            </Row>
         </div>
     );
 }
