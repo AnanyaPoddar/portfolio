@@ -18,7 +18,6 @@ export default function NavbarDefault() {
       <Navbar
         collapseOnSelect
         expand="sm"
-        variant="dark"
       >
         <Navbar.Brand >
           <Link id="brand"

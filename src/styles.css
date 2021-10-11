@@ -111,12 +111,24 @@ h1 .highlight{
   position: sticky;
   z-index: 3;
   background: #140a42;
-  padding: 10px 2%;
+  padding: 10px 1%;
 }
 
+#navbar .navbar-toggler{
+  border-color: #ed00358f !important;
+}
+
+#navbar .navbar-toggler-icon {
+  filter: invert(15%) sepia(82%) saturate(4795%) hue-rotate(335deg)
+  brightness(86%) contrast(118%) !important;
+}
+
+.navbar{
+  color:transparent;
+  background: #140a42;
+}
 #root #navbar .nav-link a {
-  color: white;
-  opacity: 90%;
+  color: rgba(255, 255, 255, 0.761);
   text-decoration:none;
 }
 
