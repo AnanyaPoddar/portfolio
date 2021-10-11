@@ -15,9 +15,9 @@ function MainPage(props) {
   return (
     <div className="App">
       <Home />
-      <Experience className="section" />
-      <Projects className="section" />
-      <Contact className="section" />
+      <Experience />
+      <Projects />
+      <Contact />
       <Socials />
     </div>
   );
