@@ -6,13 +6,13 @@ export default function Socials() {
   return (
     <ul className="socials">
       <li><a target="_blank" href="https://www.linkedin.com/in/ananya-poddar1">
-        <img src={linkedin} alt="Linkedin" />
+        <img src={linkedin} alt="Linkedin" data-aos="fade-left" data-aos-offset="0" />
       </a></li>
       <li><a target="_blank" href="mailto:ananya.poddar@mail.utoronto.ca">
-        <img src={email} alt="Email" />
+        <img src={email} alt="Email" data-aos="fade-left" data-aos-offset="0" />
       </a></li>
       <li><a target="_blank" href="https://github.com/AnanyaPoddar">
-        <img src={github} alt="Github" />
+        <img src={github} alt="Github" data-aos="fade-left" data-aos-offset="0" />
       </a></li>
     </ul>
   );

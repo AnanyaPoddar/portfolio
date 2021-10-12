@@ -30,7 +30,7 @@ function ProjectCard(props) {
 }
 function Project() {
     return (
-        <div id="projects">
+        <div id="projects" data-aos="fade-up">
             <h1 className="heading"><span>Projects</span></h1>
             <Row className="project-cards">
                 {projects.map((proj) => (

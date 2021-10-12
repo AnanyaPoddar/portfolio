@@ -19,7 +19,7 @@ export default function NavbarDefault() {
         collapseOnSelect
         expand="sm"
       >
-        <Navbar.Brand >
+        <Navbar.Brand data-aos="fade-left">
           <Link id="brand"
             activeClass="active"
             to="/"
@@ -31,8 +31,8 @@ export default function NavbarDefault() {
             A P
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" data-aos="fade-left" />
+        <Navbar.Collapse id="responsive-navbar-nav" data-aos="fade-left">
           <Nav className="ml-auto">
             <div className="nav-link">
               <Link

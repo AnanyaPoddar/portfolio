@@ -24,22 +24,22 @@ function Home() {
         }}
       />
       <div className="intro">
-        <h1>
+        <h1 data-aos="fade-down">
           Hi, I'm <em className="highlight">Ananya Poddar</em>.
         </h1>
-        <h3>
+        <h3 data-aos="fade-down">
           A <em className="highlight">Software Developer</em> and Computer
           Science student at the University of Toronto.
         </h3>
-          <Link className="getStarted"
-              to="/#experience"
-              spy={true}
-              smooth={true}
-              scroll={(el) => scrollWithOffset(el, 75)}
-              exact={true}
-            >
-             <Button variant="outline-light" id="action-btn"> Get Started!</Button>
-          </Link>
+        <Link className="getStarted"
+          to="/#experience"
+          spy={true}
+          smooth={true}
+          scroll={(el) => scrollWithOffset(el, 75)}
+          exact={true}
+        >
+          <Button variant="outline-light" id="action-btn" data-aos="fade-down" data-aos-offset="0"> Get Started!</Button>
+        </Link>
       </div>
     </div>
   );

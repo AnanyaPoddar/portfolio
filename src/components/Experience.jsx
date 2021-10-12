@@ -1,6 +1,7 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Col, Card } from "react-bootstrap";
 import { experience } from "../projects.js";
+
 function ExperienceCard(props) {
   const status = props.status;
   return (
@@ -22,7 +23,7 @@ function ExperienceCard(props) {
 }
 function Experience() {
   return (
-    <div id="experience">
+    <div id="experience" data-aos="fade-up">
       <h1 className="heading"><span>Experience</span></h1>
       <div className="experience-cards">
         {/* <CardDeck className="experience-cards"> */}
