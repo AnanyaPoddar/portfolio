@@ -6,8 +6,7 @@ function ExperienceCard(props) {
   const status = props.status;
   return (
     <Col sm={12}>
-      {/* <Link style={{ textDecoration: "none" }} to={`/details/${props.id}`}> */}
-      <div className="exp-card">
+      <div className="exp-card" data-aos="fade-up" data-aos-offset="-30px">
         <img className="exp-img" src={props.img} />
         <Card.Body className="exp-card-body">
           <h4 className="exp-date">{props.date}</h4>
@@ -17,16 +16,14 @@ function ExperienceCard(props) {
           <ul className="langs">{props.langs && props.langs.map((lang) => <li className="lang">{lang}</li>)}</ul>
         </Card.Body>
       </div>
-      {/* </Link> */}
     </Col >
   );
 }
 function Experience() {
   return (
-    <div id="experience" data-aos="fade-up">
-      <h1 className="heading"><span>Experience</span></h1>
+    <div id="experience">
+      <h1 className="heading" data-aos="fade-up" data-aos-offset="-30px"><span>Experience</span></h1>
       <div className="experience-cards">
-        {/* <CardDeck className="experience-cards"> */}
         {experience.map((exp) => (
           <ExperienceCard
             key={exp.id}

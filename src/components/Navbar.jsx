@@ -1,5 +1,5 @@
 import "../styles.css";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Button } from "react-bootstrap";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import resume from "../images/CVAnanyaPoddar.pdf";
@@ -19,7 +19,7 @@ export default function NavbarDefault() {
         collapseOnSelect
         expand="sm"
       >
-        <Navbar.Brand data-aos="fade-left">
+        <Navbar.Brand>
           <Link id="brand"
             activeClass="active"
             to="/"
@@ -31,8 +31,8 @@ export default function NavbarDefault() {
             A P
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" data-aos="fade-left" />
-        <Navbar.Collapse id="responsive-navbar-nav" data-aos="fade-left">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <div className="nav-link">
               <Link
@@ -72,7 +72,7 @@ export default function NavbarDefault() {
                 Contact
               </Link>
             </div>
-            <div className="nav-link"><a href={resume} target="_blank">Resume</a></div>
+            <Button id="nav-btn" variant="outline-light"><a style={{ "text-decoration": "none", "color": "white" }} href={resume} target="_blank">Resume</a></Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar >

@@ -37,32 +37,26 @@ function Contact() {
           points: 4
         }}
       />
-      <form onSubmit={submitForm}>
-        <h1 data-aos="fade-up" data-aos-offset="0">Let's Connect {name}!</h1>
+      <form onSubmit={submitForm} data-aos="fade-up" data-aos-offset="0">
+        <h1>Let's Connect {name}!</h1>
         <input maxLength="36"
           onChange={(e) => setName(e.target.value)}
           type="text"
           placeholder="Name"
           value={name}
-          required
-          data-aos="fade-up"
-          data-aos-offset="0" />
+          required />
         <input type="email" placeholder="Email" required
           onChange={(e) => setEmail(e.target.value)}
           type="text"
           value={email}
-          required
-          data-aos="fade-up"
-          data-aos-offset="0" />
+          required />
         <textarea rows="4" name="comment" placeholder="Your Message" required
           onChange={(e) => setMsg(e.target.value)}
           type="text"
           value={msg}
-          required
-          data-aos="fade-up"
-          data-aos-offset="0" />
-        <p className="submitted" data-aos="fade-up">{submitted}</p>
-        <Button variant="outline-light" id="action-btn" type="submit" data-aos="fade-up" data-aos-offset="-10px">
+          required />
+        <p className="submitted" >{submitted}</p>
+        <Button variant="outline-light" id="action-btn" type="submit">
           Get In Touch
         </Button>
       </form>

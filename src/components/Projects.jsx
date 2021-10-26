@@ -7,7 +7,7 @@ function ProjectCard(props) {
     return (
         <Col lg={6} className="proj-col">
             {/* <Link style={{ textDecoration: "none" }} to={`/details/${props.id}`}> */}
-            <div className="proj-card">
+            <div className="proj-card" data-aos="fade-up" data-aos-offset="-30px">
                 <img className="proj-img" src={props.img} />
                 <Card.Body className="proj-card-body">
                     <h6 className="proj-type">{props.type}</h6>
@@ -30,8 +30,8 @@ function ProjectCard(props) {
 }
 function Project() {
     return (
-        <div id="projects" data-aos="fade-up">
-            <h1 className="heading"><span>Projects</span></h1>
+        <div id="projects">
+            <h1 className="heading" data-aos="fade-up" data-aos-offset="-30px"><span>Projects</span></h1>
             <Row className="project-cards">
                 {projects.map((proj) => (
                     <ProjectCard
