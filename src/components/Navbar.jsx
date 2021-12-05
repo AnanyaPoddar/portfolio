@@ -36,7 +36,6 @@ export default function NavbarDefault() {
           <Nav className="ml-auto">
             <div className="nav-link">
               <Link
-                // activeClass="active"
                 to="/#experience"
                 spy={true}
                 smooth={true}

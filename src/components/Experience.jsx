@@ -3,7 +3,6 @@ import { Col, Card } from "react-bootstrap";
 import { experience } from "../projects.js";
 
 function ExperienceCard(props) {
-  const status = props.status;
   return (
     <Col sm={12}>
       <div className="exp-card" data-aos="fade-up" data-aos-offset="-30px">
@@ -39,7 +38,6 @@ function Experience() {
           />
         ))}
       </div>
-      {/* </CardDeck> */}
     </div>
   );
 }

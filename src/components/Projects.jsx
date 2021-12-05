@@ -6,7 +6,6 @@ import { projects } from "../projects.js";
 function ProjectCard(props) {
     return (
         <Col lg={6} className="proj-col">
-            {/* <Link style={{ textDecoration: "none" }} to={`/details/${props.id}`}> */}
             <div className="proj-card" data-aos="fade-up" data-aos-offset="-30px">
                 <img className="proj-img" src={props.img} />
                 <Card.Body className="proj-card-body">
@@ -38,6 +37,7 @@ function Project() {
                         key={proj.id}
                         id={proj.id}
                         img={proj.img}
+                        date={proj.date}
                         title={proj.title}
                         type={proj.type}
                         desc={proj.description}
