@@ -6,6 +6,8 @@ import here from "./images/location.png";
 import manulife from "./images/manulife2.png";
 import shell from "./images/shell.jpg";
 import homeyBot from "./images/homeyBot.png";
+import utoronto from "./images/utoronto.png";
+
 const experience = [
   {
     id: 1,
@@ -13,22 +15,24 @@ const experience = [
     link: "https://www.manulife.com/",
     title: "Manulife",
     role: "Software Developer Intern",
-    languages: ["Java", "Spring Boot", "Golang", "React", "Docker", "CI&CD"],
+    languages: ["REST APIs", "Java", "Spring Boot", "React", "Golang", "NodeJS", "Docker", "CI&CD"],
     status: "In Progress",
     date: "Aug 2021 - Present",
-    description: "Coming soon!",
+    description: ["Developing audit tool using Golang and Github API with React frontend, estimated to save over 100 hours of work annually",
+      "Contibuting to open-source linting ruleset for REST API development using JSON:API specification",
+      "Architecting and implementing microservices using Spring Boot to create microservice standard for 1000s of engineering employees"],
     filters: ["Software"]
   },
-  // {
-  //   id: 2,
-  //   img: utoronto,
-  //   link: "https://www.utsc.utoronto.ca/cms/computer-science-mathematics-statistics",
-  //   title: "University of Toronto",
-  //   role: "Teaching Assistant",
-  //   status: "In Progress",
-  //   date: "Sept 2021 - Present",
-  //   description: "Coming soon!"
-  // },
+  {
+    id: 2,
+    img: utoronto,
+    link: "https://www.utsc.utoronto.ca/cms/computer-science-mathematics-statistics",
+    title: "University of Toronto",
+    role: "Teaching Assistant",
+    status: "In Progress",
+    date: "Sept 2021 - Present",
+    description: ["MATA31 - Calculus for Mathematical Sciences", "Assisting students through weekly tutorials and office hours"]
+  },
   {
     id: 3,
     img: ix,
@@ -48,11 +52,11 @@ const experience = [
     link: "https://www.linkedin.com/company/giants-network-inc",
     title: "Giants Network Inc.",
     role: "Software Developer",
-    languages: ["React", "NodeJS", "Figma", "Firebase", "Wordpress"],
+    languages: ["React", "MongoDB", "NodeJS", "Express", "Figma", "Firebase", "Wordpress"],
     status: "In Progress",
     date: "Sept 2020 - Present",
     description:
-      ["Proposed and implemented portal website that acts as primary platform for interaction between 20+ organizations and 300+ youth leaders"],
+      ["Proposed, designed and implemented portal website that acts as primary platform for interaction between 20+ organizations and 300+ youth leaders"],
     filters: ["Software"]
   }
 ];

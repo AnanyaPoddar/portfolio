@@ -11,7 +11,8 @@ function ExperienceCard(props) {
           <h4 className="exp-date">{props.date}</h4>
           <h2 className="exp-role">{props.role}</h2>
           <a className="exp-title" href={props.link} target="_blank">{props.company}</a>
-          <h6 className="exp-desc">{props.desc}</h6>
+          {props.desc && props.desc.length > 1 ? <ul className="exp-desc">{props.desc.map((point) => <li style={{ "margin-bottom": "5px" }}>{point}</li>)}</ul>
+            : <h6 className="exp-desc">{props.desc}</h6>}
           <ul className="langs">{props.langs && props.langs.map((lang) => <li className="lang">{lang}</li>)}</ul>
         </Card.Body>
       </div>
