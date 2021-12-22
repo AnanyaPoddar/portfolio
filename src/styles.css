@@ -391,9 +391,12 @@ h1 .highlight{
     min-height: 500px;
     height: auto;
     margin: 180px auto;
+    padding: 20px;
   }
   .exp-img{
-    transform: translateY(-50%);
+    /* transform: translateY(-100%); */
+    top: -100px;
+    left: 25%;
     height: 250px;
     width: 80%;
   }
