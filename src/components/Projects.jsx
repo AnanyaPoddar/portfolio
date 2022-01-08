@@ -1,7 +1,5 @@
 import React from "react"
 import { Col, Row, Card } from "react-bootstrap";
-import Devpost from "../images/devpost.png";
-import Github from "../images/github.png";
 import { projects } from "../projects.js";
 function ProjectCard(props) {
     return (
@@ -15,15 +13,14 @@ function ProjectCard(props) {
                     <ul className="langs">{props.langs && props.langs.map((lang) => <li className="lang">{lang}</li>)}</ul>
                     <div className="proj-links">
                         {props.github && <a target="_blank" href={props.github}>
-                            <img src={Github} alt="Github" />
+                            <i class="fab fa-github fa-lg"></i>
                         </a>}
                         {props.devpost && <a target="_blank" href={props.devpost}>
-                            <img src={Devpost} alt="Devpost" />
+                            <i class="fas fa-external-link-alt fa-lg"></i>
                         </a>}
                     </div>
                 </Card.Body>
             </div>
-            {/* </Link> */}
         </Col>
     );
 }

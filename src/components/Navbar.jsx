@@ -2,7 +2,7 @@ import "../styles.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import resume from "../images/CVAnanyaPoddar.pdf";
+import resume from "../images/AnanyaPoddarJan2022.pdf";
 
 export default function NavbarDefault() {
   const scrollWithOffset = (el, offset) => {
@@ -19,7 +19,7 @@ export default function NavbarDefault() {
         collapseOnSelect
         expand="sm"
       >
-        <Navbar.Brand>
+        <Navbar.Brand data-aos="fade-right">
           <Link id="brand"
             activeClass="active"
             to="/"
@@ -32,9 +32,9 @@ export default function NavbarDefault() {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="ml-auto">
-            <div className="nav-link">
+            <div className="nav-link" data-aos="fade-left">
               <Link
                 to="/#experience"
                 spy={true}
@@ -46,7 +46,7 @@ export default function NavbarDefault() {
                 Experience
               </Link>
             </div>
-            <div className="nav-link">
+            <div className="nav-link" data-aos="fade-left">
               <Link
                 activeClass="active"
                 to="/#projects"
@@ -58,7 +58,7 @@ export default function NavbarDefault() {
                 Projects
               </Link>
             </div>
-            <div className="nav-link">
+            <div className="nav-link" data-aos="fade-left">
               <Link
                 activeClass="active"
                 to="/#contact"
@@ -71,7 +71,7 @@ export default function NavbarDefault() {
                 Contact
               </Link>
             </div>
-            <Button id="nav-btn" variant="outline-light"><a style={{ "text-decoration": "none", "color": "white" }} href={resume} target="_blank">Resume</a></Button>
+            <Button id="nav-btn" data-aos="fade-left" variant="outline-light"><a style={{ "text-decoration": "none", "color": "white" }} href={resume} target="_blank">Resume</a></Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar >

@@ -2,7 +2,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect } from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Home from "./components/Home";

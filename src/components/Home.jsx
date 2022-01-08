@@ -24,10 +24,10 @@ function Home() {
         }}
       />
       <div className="intro">
-        <h1 data-aos="fade-down">
+        <h1 data-aos="fade-left">
           Hi, I'm <em className="highlight">Ananya Poddar</em>.
         </h1>
-        <h3 data-aos="fade-down">
+        <h3 data-aos="fade-left">
           A <em className="highlight">Software Developer</em> and Computer
           Science student at the University of Toronto.
         </h3>
@@ -38,7 +38,7 @@ function Home() {
           scroll={(el) => scrollWithOffset(el, 75)}
           exact={true}
         >
-          <Button variant="outline-light" id="action-btn" data-aos="fade-down" data-aos-offset="0"> Get Started!</Button>
+          <Button variant="outline-light" id="action-btn" data-aos="fade-left" data-aos-offset="0"> Get Started!</Button>
         </Link>
       </div>
     </div>
