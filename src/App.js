@@ -29,7 +29,7 @@ export default function App() {
     AOS.init({ duration: 1200 });
   }, [])
   return (
-    <Router basename='/'>
+    <Router basename='/portfolio'>
       <ScrollToTop />
       <Navbar />
       <Switch>

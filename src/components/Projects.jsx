@@ -13,10 +13,10 @@ function ProjectCard(props) {
                     <ul className="langs">{props.langs && props.langs.map((lang) => <li className="lang">{lang}</li>)}</ul>
                     <div className="proj-links">
                         {props.github && <a target="_blank" href={props.github}>
-                            <i class="fab fa-github fa-lg"></i>
+                            <i className="fab fa-github fa-lg"></i>
                         </a>}
                         {props.devpost && <a target="_blank" href={props.devpost}>
-                            <i class="fas fa-external-link-alt fa-lg"></i>
+                            <i className="fas fa-external-link-alt fa-lg"></i>
                         </a>}
                     </div>
                 </Card.Body>

@@ -1,6 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import Socials from "./Socials";
 import Wave from "react-wavify";
 import db from "../firebase";
 

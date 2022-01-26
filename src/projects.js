@@ -31,7 +31,7 @@ const experience = [
     role: "Teaching Assistant",
     status: "In Progress",
     date: "Sept 2021 - Present",
-    description: ["MATA31 - Calculus for Mathematical Sciences", "Assisting students through weekly tutorials and office hours"]
+    description: ["CSCA67 - Discrete Mathematics", "MATA31 - Calculus for Mathematical Sciences"]
   },
   {
     id: 3,
