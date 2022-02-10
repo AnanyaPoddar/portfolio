@@ -16,7 +16,7 @@
 
 #home .wave {
   height: 84vh;
-  /* width:120% !important; */
+  width:120% !important;
   z-index: 5;
   margin: 0;
 }
