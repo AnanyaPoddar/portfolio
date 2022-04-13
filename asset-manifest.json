@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b1d54eff.chunk.css",
+    "main.css": "/portfolio/static/css/main.25c6186a.chunk.css",
     "main.js": "/portfolio/static/js/main.93e66038.chunk.js",
     "main.js.map": "/portfolio/static/js/main.93e66038.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
@@ -10,7 +10,7 @@
     "static/js/2.422d0c50.chunk.js.map": "/portfolio/static/js/2.422d0c50.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.a7a85ca3.chunk.css.map": "/portfolio/static/css/2.a7a85ca3.chunk.css.map",
-    "static/css/main.b1d54eff.chunk.css.map": "/portfolio/static/css/main.b1d54eff.chunk.css.map",
+    "static/css/main.25c6186a.chunk.css.map": "/portfolio/static/css/main.25c6186a.chunk.css.map",
     "static/js/2.422d0c50.chunk.js.LICENSE.txt": "/portfolio/static/js/2.422d0c50.chunk.js.LICENSE.txt",
     "static/media/AnanyaPoddarJan2022.5f7e7172.pdf": "/portfolio/static/media/AnanyaPoddarJan2022.5f7e7172.pdf",
     "static/media/accessMe.7beef7a8.jpg": "/portfolio/static/media/accessMe.7beef7a8.jpg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.76232b81.js",
     "static/css/2.a7a85ca3.chunk.css",
     "static/js/2.422d0c50.chunk.js",
-    "static/css/main.b1d54eff.chunk.css",
+    "static/css/main.25c6186a.chunk.css",
     "static/js/main.93e66038.chunk.js"
   ]
 }
