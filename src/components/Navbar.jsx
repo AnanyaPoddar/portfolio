@@ -2,6 +2,7 @@ import "../styles.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import favicon from "../images/favicon.ico"
 import resume from "../images/AnanyaPoddarJan2022.pdf";
 
 export default function NavbarDefault() {
@@ -28,7 +29,7 @@ export default function NavbarDefault() {
             scroll={(el) => scrollWithOffset(el, 75)}
             exact
           >
-            A P
+          <img src={favicon}></img>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

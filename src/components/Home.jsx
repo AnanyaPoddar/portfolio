@@ -11,18 +11,51 @@ function Home() {
     });
   };
   return (
+  //   <div style={{ marginTop: "-200px" }}>
+  //   <div className="wave-container" level={90}>
+  //     <Wave
+  //       fill="#140a42"
+  //       paused={false}
+  //       options={{
+  //         height: 20,
+  //         amplitude: 10,
+  //         speed: 0.2,
+  //         points: 3,
+  //       }}
+  //     />
+  //   </div>
+  //   <div >
+  //       <h1 data-aos="fade-left">
+  //         Hi, I'm <em className="highlight">Ananya Poddar</em>.
+  //       </h1>
+  //       <h3 data-aos="fade-left">
+  //         A <em className="highlight">Software Developer</em> and Computer
+  //         Science student at the University of Toronto.
+  //       </h3>
+  //       <Link className="getStarted"
+  //         to="/#experience"
+  //         spy={true}
+  //         smooth={true}
+  //         scroll={(el) => scrollWithOffset(el, 75)}
+  //         exact={true}
+  //       >
+  //         <Button variant="outline-light" id="action-btn" data-aos="fade-left" data-aos-offset="0"> Get Started!</Button>
+  //       </Link>
+  //     </div>
+  // </div>
     <div id="home">
+    <div className="wave-container" level={90}>
       <Wave
-        className="wave"
         fill="#140a42"
         paused={false}
         options={{
           height: 20,
-          amplitude: 45,
-          speed: 0.1,
-          points: 5
+          amplitude: 10,
+          speed: 0.2,
+          points: 3,
         }}
       />
+    </div>
       <div className="intro">
         <h1 data-aos="fade-left">
           Hi, I'm <em className="highlight">Ananya Poddar</em>.

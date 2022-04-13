@@ -16,17 +16,17 @@
 
 #home .wave {
   height: 84vh;
-  width:120% !important;
   z-index: 5;
-  margin: 0;
 }
 
-#home .wave, .details-outer .wave{
-  transform: rotate(180deg);
-}
-
-.wave svg{ 
-  margin:0;
+.wave-container{
+  left: 0;
+  right: 0;
+  top: -5px;
+  height: 84vh;
+  display: flex;
+  z-index: -1;
+  transform: scale(1.05) rotate(180deg);
 }
 
 #home,
@@ -140,7 +140,8 @@ h1 .highlight{
   position: sticky;
   z-index: 3;
   background: #140a42;
-  padding: 10px 1%;
+  padding: 0 1%;
+  margin: 0
 }
 
 #navbar .navbar-toggler{
