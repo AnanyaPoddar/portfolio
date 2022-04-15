@@ -46,14 +46,10 @@ function Contact() {
           required />
         <input type="email" placeholder="Email" required
           onChange={(e) => setEmail(e.target.value)}
-          type="text"
-          value={email}
-          required />
+          value={email}/>
         <textarea rows="4" name="comment" placeholder="Your Message" required
           onChange={(e) => setMsg(e.target.value)}
-          type="text"
-          value={msg}
-          required />
+          value={msg}/>
         <p className="submitted" >{submitted}</p>
         <Button variant="outline-light" id="action-btn" type="submit">
           Get In Touch

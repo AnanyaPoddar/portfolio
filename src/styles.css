@@ -4,6 +4,7 @@
   border: 0;
   /* font-family: "Roboto", sans-serif; */
   font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
 }
 
 .App{
@@ -67,6 +68,7 @@
 .intro h1,
 .intro h3 {
   line-height: 1.7;
+  letter-spacing: 3px;
 }
 
 .highlight {
@@ -91,6 +93,7 @@ h1 .highlight{
   text-transform: uppercase;
   outline: 0;
   z-index: 1;
+  letter-spacing: 3px;
 }
 
 
@@ -120,6 +123,10 @@ h1 .highlight{
   z-index: 1;
 }
 
+#nav-btn a{
+  letter-spacing: 3px;
+}
+
 #nav-btn::before {
   content: "";
   position: absolute;
@@ -144,6 +151,10 @@ h1 .highlight{
   margin: 0
 }
 
+#navbar img{
+  transform:scale(0.8)
+}
+
 #navbar .navbar-toggler{
   border-color: #ed00358f !important;
 }
@@ -160,6 +171,7 @@ h1 .highlight{
 #root #navbar .nav-link a {
   color: rgba(255, 255, 255, 0.761);
   text-decoration:none;
+  letter-spacing: 3px;
 }
 
 #navbar #brand,
@@ -227,6 +239,7 @@ h1 .highlight{
 
 #contact h1{
   font-size: 2.2rem;
+  letter-spacing: 3px;
 }
 
 #contact input,
@@ -242,6 +255,7 @@ h1 .highlight{
   font-size: 16px;
   font-weight: 300;
   color: white;
+  letter-spacing: 3px;
 }
 
 ::placeholder {
@@ -277,6 +291,7 @@ h1 .highlight{
   text-align: center;
   margin: 50px;
   color:#2e1f70;
+  letter-spacing: 3px;
 }
 .heading > span{
  position: relative;
