@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3530b9a7.chunk.css",
-    "main.js": "/portfolio/static/js/main.b5e06bc9.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b5e06bc9.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.1e4e5e0b.chunk.css",
+    "main.js": "/portfolio/static/js/main.495a37eb.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.495a37eb.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/css/2.a7a85ca3.chunk.css": "/portfolio/static/css/2.a7a85ca3.chunk.css",
@@ -10,10 +10,11 @@
     "static/js/2.b9047a75.chunk.js.map": "/portfolio/static/js/2.b9047a75.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.a7a85ca3.chunk.css.map": "/portfolio/static/css/2.a7a85ca3.chunk.css.map",
-    "static/css/main.3530b9a7.chunk.css.map": "/portfolio/static/css/main.3530b9a7.chunk.css.map",
+    "static/css/main.1e4e5e0b.chunk.css.map": "/portfolio/static/css/main.1e4e5e0b.chunk.css.map",
     "static/js/2.b9047a75.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b9047a75.chunk.js.LICENSE.txt",
-    "static/media/AnanyaPoddarJan2022.5f7e7172.pdf": "/portfolio/static/media/AnanyaPoddarJan2022.5f7e7172.pdf",
+    "static/media/AnanyaPoddarResumeJan2023.a6f11607.pdf": "/portfolio/static/media/AnanyaPoddarResumeJan2023.a6f11607.pdf",
     "static/media/accessMe.7beef7a8.jpg": "/portfolio/static/media/accessMe.7beef7a8.jpg",
+    "static/media/amorr.c0d9f942.png": "/portfolio/static/media/amorr.c0d9f942.png",
     "static/media/ansible.c4df2857.jpg": "/portfolio/static/media/ansible.c4df2857.jpg",
     "static/media/ecoblock.63905f88.png": "/portfolio/static/media/ecoblock.63905f88.png",
     "static/media/favicon.c569a803.ico": "/portfolio/static/media/favicon.c569a803.ico",
@@ -21,14 +22,16 @@
     "static/media/homeyBot.3e06b6a0.png": "/portfolio/static/media/homeyBot.3e06b6a0.png",
     "static/media/location.83b2afda.png": "/portfolio/static/media/location.83b2afda.png",
     "static/media/manulife2.72c511b1.png": "/portfolio/static/media/manulife2.72c511b1.png",
-    "static/media/shell.173f23f1.jpg": "/portfolio/static/media/shell.173f23f1.jpg",
+    "static/media/mybnb.8f4b05d3.png": "/portfolio/static/media/mybnb.8f4b05d3.png",
+    "static/media/panorama.e2bcd836.png": "/portfolio/static/media/panorama.e2bcd836.png",
+    "static/media/splunk.d28e05d0.jpeg": "/portfolio/static/media/splunk.d28e05d0.jpeg",
     "static/media/utoronto.8de741e4.png": "/portfolio/static/media/utoronto.8de741e4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.76232b81.js",
     "static/css/2.a7a85ca3.chunk.css",
     "static/js/2.b9047a75.chunk.js",
-    "static/css/main.3530b9a7.chunk.css",
-    "static/js/main.b5e06bc9.chunk.js"
+    "static/css/main.1e4e5e0b.chunk.css",
+    "static/js/main.495a37eb.chunk.js"
   ]
 }
