@@ -29,7 +29,7 @@ function Home() {
           Hi, I'm <em className="highlight">Ananya Poddar</em>.
         </h1>
         <h3 data-aos="fade-left">
-          A <em className="highlight">Software Developer</em> and Computer
+          A <em className="highlight">Software Engineer</em> and fourth-year Computer
           Science student at the University of Toronto.
         </h3>
         <Link className="getStarted"

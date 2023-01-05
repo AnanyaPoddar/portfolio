@@ -9,9 +9,9 @@ function ExperienceCard(props) {
       <div className="exp-card" data-aos="fade-up" data-aos-offset="-30px">
         <img className="exp-img" src={props.img} />
         <Card.Body className="exp-card-body">
-          <h4 className="exp-date">{props.date}</h4>
-          <h2 className="exp-role">{props.role}</h2>
           <a className="exp-title" href={props.link} target="_blank">{props.company}</a>
+          <h2 className="exp-role">{props.role}</h2>
+          <h4 className="exp-date">{props.date}</h4>
           {props.desc && props.desc.length > 1 ? <ul className="exp-desc">{props.desc.map((point) => <li style={{ "marginBottom": "5px" }}>{point}</li>)}</ul>
             : <h6 className="exp-desc">{props.desc}</h6>}
           <ul className="langs">{props.langs && props.langs.map((lang) => <li className="lang">{lang}</li>)}</ul>
@@ -41,7 +41,7 @@ function Experience() {
             id={exp.id}
             img={exp.img}
             link={exp.link}
-            company={exp.company}
+            company={exp.title}
             role={exp.role}
             desc={exp.description}
             langs={exp.languages}

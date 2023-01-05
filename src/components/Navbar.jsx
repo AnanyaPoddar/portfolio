@@ -2,8 +2,8 @@ import "../styles.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import favicon from "../images/favicon.ico"
-import resume from "../images/AnanyaPoddarJan2022.pdf";
+import favicon from "../media/favicon.ico"
+import resume from "../media/AnanyaPoddarResumeJan2023.pdf";
 
 export default function NavbarDefault() {
   const scrollWithOffset = (el, offset) => {
@@ -17,6 +17,7 @@ export default function NavbarDefault() {
   return (
     <div id="navbar">
       <Navbar
+        fixed="top"
         collapseOnSelect
         expand="sm"
       >

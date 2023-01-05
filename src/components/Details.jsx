@@ -2,8 +2,8 @@ import { React, Fragment } from "react";
 import { details } from "../projects.js";
 import Wave from "react-wavify";
 import Navbar from "./Navbar";
-import Github from "../images/github.png";
-import Devpost from "../images/devpost.png";
+import Github from "../media/github.png";
+import Devpost from "../media/devpost.png";
 
 function DetailPage(props) {
   return (
@@ -21,7 +21,7 @@ function DetailPage(props) {
         {props.github && <a target="_blank" href={props.github}>
           <img className="github" src={Github} alt="Github" />
         </a>}
-        {props.devpost && <a target="_blank" href={props.devpost}>
+        {props.external&& <a target="_blank" href={props.devpost}>
           <img className="devpost" src={Devpost} alt="Devpost" />
         </a>}
       </div>
@@ -40,7 +40,7 @@ function renderDetails(exp) {
       learned={exp.learned}
       project={exp.project}
       github={exp.github}
-      devpost={exp.devpost}
+      external={exp.external}
     />
   );
 }

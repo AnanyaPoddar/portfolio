@@ -3,19 +3,18 @@ import { Col, Row, Card } from "react-bootstrap";
 import { projects } from "../projects.js";
 function ProjectCard(props) {
     return (
-        <Col lg={6} className="proj-col">
+        <Col lg={4} md={6} className="proj-col">
             <div className="proj-card" data-aos="fade-up" data-aos-offset="-30px">
-                <img className="proj-img" src={props.img} />
+                <img className="proj-img" src={props.img} alt={props.title}/>
                 <Card.Body className="proj-card-body">
-                    <h6 className="proj-type">{props.type}</h6>
                     <h4 className="proj-title">{props.title}</h4>
                     <p className="proj-desc">{props.desc}</p>
                     <ul className="langs">{props.langs && props.langs.map((lang) => <li className="lang">{lang}</li>)}</ul>
                     <div className="proj-links">
-                        {props.github && <a target="_blank" href={props.github}>
+                        {props.github && <a target="_blank" rel="noreferrer" href={props.github}>
                             <i className="fab fa-github fa-lg"></i>
                         </a>}
-                        {props.devpost && <a target="_blank" href={props.devpost}>
+                        {props.external&& <a target="_blank" rel="noreferrer" href={props.external}>
                             <i className="fas fa-external-link-alt fa-lg"></i>
                         </a>}
                     </div>
@@ -40,7 +39,7 @@ function Project() {
                         desc={proj.description}
                         langs={proj.languages}
                         github={proj.github}
-                        devpost={proj.devpost}
+                        external={proj.external}
                     />
                 ))}
             </Row>

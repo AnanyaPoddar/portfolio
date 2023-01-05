@@ -12,7 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Socials from "./components/Socials";
 import "./styles.css";
 
-function MainPage(props) {
+function MainPage() {
   return (
     <div className="App">
       <Home />

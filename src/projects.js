@@ -1,40 +1,55 @@
-import accessMe from "./images/accessMe.jpg";
-import ix from "./images/ansible.jpg";
-import ecoblock from "./images/ecoblock.png";
-import gn from "./images/gn.png";
-import here from "./images/location.png";
-import manulife from "./images/manulife2.png";
-import shell from "./images/shell.jpg";
-import homeyBot from "./images/homeyBot.png";
-import utoronto from "./images/utoronto.png";
+import accessMe from "./media/accessMe.jpg";
+import ix from "./media/ansible.jpg";
+import ecoblock from "./media/ecoblock.png";
+import gn from "./media/gn.png";
+import here from "./media/location.png";
+import manulife from "./media/manulife2.png";
+import splunk from "./media/splunk.jpeg";
+import homeyBot from "./media/homeyBot.png";
+import utoronto from "./media/utoronto.png";
+import panorama from "./media/panorama.png";
+import amorr from "./media/amorr.png";
+import mybnb from "./media/mybnb.png";
+
 
 const experience = [
   {
     id: 1,
+    img: splunk,
+    link: "https://www.splunk.com/en_us/about-splunk.html",
+    title: "Splunk",
+    role: "Software Engineer Intern",
+    languages: ["Java", "REST APIs", "Mockito", "Docker", "Kubernetes"],
+    status: "Completed",
+    date: "Sept 2022 - Dec 2022",
+    description: ["Strengthened resiliency of data ingestion into Splunk for 20 000+ customers by integrating circuit-breaker and retry resiliency patterns; Optimized for asynchronous calls in multi-threaded system"],
+  },
+  {
+    id: 2,
     img: manulife,
     link: "https://www.manulife.com/",
     title: "Manulife",
     role: "Software Developer Intern",
     languages: ["REST APIs", "Java", "Spring Boot", "React", "Golang", "NodeJS", "Docker", "CI&CD"],
-    status: "In Progress",
-    date: "Aug 2021 - Present",
+    status: "Completed",
+    date: "Aug 2021 - Apr 2022",
     description: ["Developing audit tool using Golang and Github API with React frontend, estimated to save over 100 hours of work annually",
       "Contibuting to open-source linting ruleset for REST API development using JSON:API specification",
       "Architecting and implementing microservices using Spring Boot to create microservice standard for 1000s of engineering employees"],
-    filters: ["Software"]
   },
   {
-    id: 2,
+    id: 3,
     img: utoronto,
     link: "https://www.utsc.utoronto.ca/cms/computer-science-mathematics-statistics",
     title: "University of Toronto",
     role: "Teaching Assistant",
+    languages: ["Python", "SQL", "Data Structures", "Graph Theory", "Proof Concepts"],
     status: "In Progress",
     date: "Sept 2021 - Present",
-    description: ["CSCA67 - Discrete Mathematics", "MATA31 - Calculus for Mathematical Sciences"]
+    description: ["Introduction to Programming | Discrete Mathematics | Calculus I for Mathematical Sciences", "Taught computer science concepts and programming basics to 60+ students through tutorials & labs", "Created lesson plans to promote deep understanding of graph theory and proof concepts in tutorials"]
   },
   {
-    id: 3,
+    id: 4,
     img: ix,
     link: "https://www.indexexchange.com/",
     title: "Index Exchange",
@@ -44,10 +59,9 @@ const experience = [
     date: "Jan 2021 - Apr-2021",
     description:
       ["Deployed a scalable UI dashboard to centralize automation and management of hundreds of weekly deployments for 250+ engineering employees"],
-    filters: ["Software"]
   },
   {
-    id: 4,
+    id: 5,
     img: gn,
     link: "https://www.linkedin.com/company/giants-network-inc",
     title: "Giants Network Inc.",
@@ -56,56 +70,76 @@ const experience = [
     status: "In Progress",
     date: "Sept 2020 - Present",
     description:
-      ["Proposed, designed and implemented portal website that acts as primary platform for interaction between 20+ organizations and 300+ youth leaders"],
-    filters: ["Software"]
+      ["Proposed, designed and implementing portal website that acts as primary platform to connect 300+ youth leaders to experiential learning opportunities across 20+ organizations"],
   }
 ];
 
 const projects = [
   {
     id: 1,
+    img: panorama,
+    title: "Panorama",
+    date: "Jun 2022 - Aug 2022",
+    type: "Project",
+    github: "https://github.com/AnanyaPoddar/panorama",
+    external: "https://www.youtube.com/watch?v=qehIdTs6wII",
+    description: "An all-inclusive digital collaboration tool with advanced whiteboarding capabilities, group video calls, and mass emails",
+    languages: ["WebRTC", "Socket.io", "Node.js", "Express", "React", "MongoDB"]
+  },
+  {
+    id: 2,
+    img: amorr,
+    title: "Amorr",
+    date: "May 2022 - Aug 20022",
+    type: "Project",
+    github: "https://github.com/AnanyaPoddar/Amorr",
+    description: "A web app that connects users with service providers at their doorstep, including filtering for and scheduling services. Services range from beauty and hair to landscaping.",
+    languages: ["Flask", "Azure SQL", "ReactJs", "Node.js", "Amazon S3", "Agile",]
+  },
+  {
+    id: 3,
+    img: mybnb,
+    title: "MyBnB",
+    date: "Jul 2022 - Aug 2022",
+    type: "Project",
+    github: "https://github.com/AnanyaPoddar/MyBnB",
+    description: "A terminal-based database application that mocks AirBnB, with support for all major operations expected for hosts and customers. Includes reports for insights, and a host toolkit to suggest how they can gain more customers.",
+    languages: ["Java", "SQL", "JDBC"]
+  },
+  {
+    id: 4,
     img: homeyBot,
     title: "HomeyBot",
     date: "Nov 2021",
     type: "Hackathon Project",
-    devpost: "https://devpost.com/software/friendly-guy-frank",
+    external: "https://devpost.com/software/friendly-guy-frank",
     description: "A Discord bot that provides a safe space for the community, as dictated by the community. Users collectively decide on and combat inappropriate content and graphic images.",
-    languages: ["Python", "Google Cloud Natural Language AI", "Google Cloud Vision API", "Firebase", "DictionaryApi"]
+    languages: ["Python", "Google Cloud Natural Language", "Google Cloud Vision API", "Firebase", "DictionaryApi"]
   },
   {
-    id: 2,
+    id: 5,
     img: accessMe,
     title: "AccessMe",
     date: "Oct 2021",
     type: "Hackathon Project",
     github: "https://github.com/AnanyaPoddar/borderhacks",
-    devpost: "https://devpost.com/software/accessme",
+    external: "https://devpost.com/software/accessme",
     description: "A chrome extension that provides an all-in-one solution to personalize your browsing experience, with the goal of taking us one step closer to universal accessibility on the web.",
     languages: ["WebSpeechAPI", "DictionaryAPI", "HTML/CSS/JS", "Figma"]
   },
   {
-    id: 3,
+    id: 6,
     img: ecoblock,
     title: "EcoBlock",
     date: "Mar 2021",
     type: "Hackathon Project",
     github: "https://github.com/Johnson-Su/EcoBlock",
-    devpost: "https://devpost.com/software/ecoblock",
+    external: "https://devpost.com/software/ecoblock",
     description: "A sustainable proof-of-stake blockchain, accompanied by a built-in reward system for certified green energy sources and a wallet mobile application.",
     languages: ["Flutter", "Google Cloud Vision API", "Python", "Firebase", "Figma"]
   },
   {
-    id: 4,
-    img: shell,
-    title: "Mock Shell Application",
-    date: "Jun 2020 - Jul 2020",
-    type: "Group Project",
-    project: true,
-    description: "A shell application that performs linux shell commands, mimicks file system management, and includes text-to-speech functionality.",
-    languages: ["Java", "Java Speech API", "Agile", "TDD"]
-  },
-  {
-    id: 5,
+    id: 7,
     title: "Portfolio Site",
     img: here,
     date: "Ongoing",
