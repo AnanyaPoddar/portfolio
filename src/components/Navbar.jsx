@@ -17,13 +17,11 @@ export default function NavbarDefault() {
   return (
     <div id="navbar">
       <Navbar
-        fixed="top"
         collapseOnSelect
-        expand="sm"
+        expand="md"
       >
         <Navbar.Brand data-aos="fade-right">
           <Link id="brand"
-            activeClass="active"
             to="/"
             spy={true}
             smooth={true}
@@ -42,7 +40,7 @@ export default function NavbarDefault() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                scroll={(el) => scrollWithOffset(el, 75)}
+                scroll={(el) => scrollWithOffset(el, 100)}
                 exact
               >
                 Experience
@@ -50,14 +48,26 @@ export default function NavbarDefault() {
             </div>
             <div className="nav-link" data-aos="fade-left">
               <Link
-                activeClass="active"
                 to="/#projects"
                 spy={true}
                 smooth={true}
                 duration={500}
+                scroll={(el) => scrollWithOffset(el, 75)}
                 exact
               >
                 Projects
+              </Link>
+            </div>
+            <div className="nav-link" data-aos="fade-left">
+              <Link
+                to="/#skills"
+                spy={true}
+                smooth={true}
+                duration={500}
+                scroll={(el) => scrollWithOffset(el, 75)}
+                exact
+              >
+                Skills
               </Link>
             </div>
             <div className="nav-link" data-aos="fade-left">
@@ -73,7 +83,7 @@ export default function NavbarDefault() {
                 Contact
               </Link>
             </div>
-            <Button id="nav-btn" data-aos="fade-left" variant="outline-light"><a style={{ "text-decoration": "none", "color": "white" }} href={resume} target="_blank">Resume</a></Button>
+            <Button id="nav-btn" data-aos="fade-left" variant="outline-light"><a style={{ "text-decoration": "none", "color": "white" }} href={resume} target="_blank" rel="noreferrer">Resume</a></Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar >
