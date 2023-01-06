@@ -267,7 +267,7 @@ h1 .highlight{
   opacity: 0.6;
 }
 
-#contact button {
+#contact button#action-btn {
   padding: 10px 15px;
   color: #ed003f;
   border-color: #ed003f;
@@ -277,12 +277,14 @@ h1 .highlight{
   margin: 0 auto 10px auto;
 }
 
+
+
 .submitted {
-  color: #ed003f;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
-#action-btn:hover{
+#action-btn:hover, #contact button#action-btn:hover{
   color: white;
 }
 

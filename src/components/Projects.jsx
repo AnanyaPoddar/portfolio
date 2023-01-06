@@ -28,8 +28,7 @@ function Project() {
             <div className="project-cards">
                 {projects.map((proj) => (
                     <ProjectCard
-                        key={proj.id}
-                        id={proj.id}
+                        key={proj.title}
                         img={proj.img}
                         date={proj.date}
                         title={proj.title}

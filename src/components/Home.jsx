@@ -34,10 +34,9 @@ function Home() {
         </h3>
         <Link className="getStarted"
           to="/#experience"
-          spy={true}
           smooth={true}
           scroll={(el) => scrollWithOffset(el, 75)}
-          exact={true}
+          exact
         >
           <Button variant="outline-light" id="action-btn" data-aos="fade-left" data-aos-offset="0"> Get Started!</Button>
         </Link>

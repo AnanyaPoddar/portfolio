@@ -8,11 +8,11 @@ function Skills() {
         <div className="skills-container">
             <div className="languages">
                 <h4>Languages and Databases</h4>
-                <ul className="langs">{languages && languages.map((lang) => <li className="lang">{lang}</li>)}</ul>
+                <ul className="langs">{languages && languages.map((lang) => <li key={lang} className="lang">{lang}</li>)}</ul>
             </div>
             <div className="tools">
                 <h4>Tools and Frameworks</h4>
-                <ul className="langs">{tools && tools.map((tool) => <li className="lang">{tool}</li>)}</ul>
+                <ul className="langs">{tools && tools.map((tool) => <li key={tool} className="lang">{tool}</li>)}</ul>
             </div>
         </div>
     </div>

@@ -14,7 +14,6 @@ import mybnb from "./media/mybnb.png";
 
 const experience = [
   {
-    id: 1,
     img: splunk,
     link: "https://www.splunk.com/en_us/about-splunk.html",
     title: "Splunk",
@@ -25,7 +24,6 @@ const experience = [
     description: ["Strengthened resiliency of data ingestion into Splunk for 20 000+ customers by integrating circuit-breaker and retry resiliency patterns; Optimized for asynchronous calls in multi-threaded system"],
   },
   {
-    id: 2,
     img: manulife,
     link: "https://www.manulife.com/",
     title: "Manulife",
@@ -38,7 +36,6 @@ const experience = [
       "Architecting and implementing microservices using Spring Boot to create microservice standard for 1000s of engineering employees"],
   },
   {
-    id: 3,
     img: utoronto,
     link: "https://www.utsc.utoronto.ca/cms/computer-science-mathematics-statistics",
     title: "University of Toronto",
@@ -49,7 +46,6 @@ const experience = [
     description: ["Introduction to Programming | Discrete Mathematics | Calculus I for Mathematical Sciences", "Taught computer science concepts and programming basics to 60+ students through tutorials & labs", "Created lesson plans to promote deep understanding of graph theory and proof concepts in tutorials"]
   },
   {
-    id: 4,
     img: ix,
     link: "https://www.indexexchange.com/",
     title: "Index Exchange",
@@ -61,7 +57,6 @@ const experience = [
       ["Deployed a scalable UI dashboard to centralize automation and management of hundreds of weekly deployments for 250+ engineering employees"],
   },
   {
-    id: 5,
     img: gn,
     link: "https://www.linkedin.com/company/giants-network-inc",
     title: "Giants Network Inc.",
@@ -76,7 +71,6 @@ const experience = [
 
 const projects = [
   {
-    id: 1,
     img: panorama,
     title: "Panorama",
     date: "Jun 2022 - Aug 2022",
@@ -87,7 +81,6 @@ const projects = [
     languages: ["WebRTC", "Socket.io", "Node.js", "Express", "React", "MongoDB"]
   },
   {
-    id: 2,
     img: amorr,
     title: "Amorr",
     date: "May 2022 - Aug 20022",
@@ -97,7 +90,6 @@ const projects = [
     languages: ["Flask", "Azure SQL", "ReactJs", "Node.js", "Amazon S3", "Agile",]
   },
   {
-    id: 3,
     img: mybnb,
     title: "MyBnB",
     date: "Jul 2022 - Aug 2022",
@@ -107,7 +99,6 @@ const projects = [
     languages: ["Java", "SQL", "JDBC"]
   },
   {
-    id: 4,
     img: homeyBot,
     title: "HomeyBot",
     date: "Nov 2021",
@@ -117,7 +108,6 @@ const projects = [
     languages: ["Python", "Google Cloud Natural Language", "Google Cloud Vision API", "Firebase", "DictionaryApi"]
   },
   {
-    id: 5,
     img: accessMe,
     title: "AccessMe",
     date: "Oct 2021",
@@ -128,7 +118,6 @@ const projects = [
     languages: ["WebSpeechAPI", "DictionaryAPI", "HTML/CSS/JS", "Figma"]
   },
   {
-    id: 6,
     img: ecoblock,
     title: "EcoBlock",
     date: "Mar 2021",
@@ -139,14 +128,13 @@ const projects = [
     languages: ["Flutter", "Google Cloud Vision API", "Python", "Firebase", "Figma"]
   },
   {
-    id: 7,
     title: "Portfolio Site",
     img: here,
     date: "Ongoing",
     type: "Solo Project",
     github: "https://github.com/AnanyaPoddar/portfolio",
     description: "You are here!",
-    languages: ["React", "Firebase", "Figma"]
+    languages: ["React", "EmailJS", "Figma"]
   }
 ]
 
