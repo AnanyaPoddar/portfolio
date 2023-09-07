@@ -10,6 +10,7 @@ import utoronto from "./media/utoronto.png";
 import panorama from "./media/panorama.png";
 import amorr from "./media/amorr.png";
 import mybnb from "./media/mybnb.png";
+import pintos from "./media/pintos.svg";
 
 
 const experience = [
@@ -82,15 +83,6 @@ const projects = [
     languages: ["WebRTC", "Socket.io", "Node.js", "Express", "React", "MongoDB"]
   },
   {
-    img: amorr,
-    title: "Amorr",
-    date: "May 2022 - Aug 20022",
-    type: "Project",
-    github: "https://github.com/AnanyaPoddar/Amorr",
-    description: "A web app that connects users with service providers at their doorstep, including filtering for and scheduling services. Services range from beauty and hair to landscaping.",
-    languages: ["Flask", "Azure SQL", "ReactJs", "Node.js", "Amazon S3", "Agile",]
-  },
-  {
     img: mybnb,
     title: "MyBnB",
     date: "Jul 2022 - Aug 2022",
@@ -98,6 +90,23 @@ const projects = [
     github: "https://github.com/AnanyaPoddar/MyBnB",
     description: "A terminal-based database application that mocks AirBnB, with support for all major operations expected for hosts and customers. Includes reports for insights, and a host toolkit to suggest how they can gain more customers.",
     languages: ["Java", "SQL", "JDBC"]
+  },
+  {
+    img: pintos,
+    title: "Pintos",
+    date: "Jan 2023 - Apr 2023",
+    type: "Project",
+    description: "Extended simple operating system framework for 80x86 architecture to support multithreading, user programs with I/O support, virtual memory, and a basic file system",
+    languages: ["C++", "OS", "Multithreading", "Virtual Memory", "File System"]
+  },
+  {
+    img: amorr,
+    title: "Amorr",
+    date: "May 2022 - Aug 20022",
+    type: "Project",
+    github: "https://github.com/AnanyaPoddar/Amorr",
+    description: "A web app that connects users with service providers at their doorstep, including filtering for and scheduling services. Services range from beauty and hair to landscaping.",
+    languages: ["Flask", "Azure SQL", "ReactJs", "Node.js", "Amazon S3", "Agile",]
   },
   {
     img: homeyBot,
