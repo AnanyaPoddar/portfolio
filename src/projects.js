@@ -31,19 +31,20 @@ const experience = [
     languages: ["REST APIs", "Java", "Spring Boot", "React", "Golang", "NodeJS", "Docker", "CI&CD"],
     status: "Completed",
     date: "Aug 2021 - Apr 2022",
-    description: ["Developing audit tool using Golang and Github API with React frontend, estimated to save over 100 hours of work annually",
-      "Contibuting to open-source linting ruleset for REST API development using JSON:API specification",
-      "Architecting and implementing microservices using Spring Boot to create microservice standard for 1000s of engineering employees"],
+    description: ["Developed audit tool using Golang and Github API with React frontend, estimated to save over 100 hours of work annually",
+      "Contibuted to open-source linting ruleset for REST API development using JSON:API specification",
+      "Architected and implemented microservices using Spring Boot to create microservice standard for 1000s of engineering employees"],
   },
   {
     img: utoronto,
     link: "https://www.utsc.utoronto.ca/cms/computer-science-mathematics-statistics",
     title: "University of Toronto",
     role: "Teaching Assistant",
-    languages: ["Python", "SQL", "Data Structures", "Graph Theory", "Proof Concepts"],
+    languages: ["Python", "SQL", "Data Structures", "Graph Theory", "Proof Concepts", "HCI"],
     status: "In Progress",
     date: "Sept 2021 - Present",
-    description: ["Introduction to Programming | Discrete Mathematics | Calculus I for Mathematical Sciences", "Taught computer science concepts and programming basics to 60+ students through tutorials & labs", "Created lesson plans to promote deep understanding of graph theory and proof concepts in tutorials"]
+    description: ["Human-Computer Interaction | Introduction to Programming | Discrete Mathematics | Calculus I for Mathematical Sciences", 
+    "Taught computer science concepts and programming basics to 60+ students through tutorials & labs", "Created lesson plans to promote deep understanding of graph theory and proof concepts in tutorials"]
   },
   {
     img: ix,
