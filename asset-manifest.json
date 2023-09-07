@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f9854638.chunk.css",
-    "main.js": "/portfolio/static/js/main.220fcbe3.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.220fcbe3.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.72897fa2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.72897fa2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/css/2.eb35f815.chunk.css": "/portfolio/static/css/2.eb35f815.chunk.css",
@@ -24,6 +24,7 @@
     "static/media/manulife2.72c511b1.png": "/portfolio/static/media/manulife2.72c511b1.png",
     "static/media/mybnb.8f4b05d3.png": "/portfolio/static/media/mybnb.8f4b05d3.png",
     "static/media/panorama.e2bcd836.png": "/portfolio/static/media/panorama.e2bcd836.png",
+    "static/media/pintos.5e53605f.svg": "/portfolio/static/media/pintos.5e53605f.svg",
     "static/media/splunk.d28e05d0.jpeg": "/portfolio/static/media/splunk.d28e05d0.jpeg",
     "static/media/utoronto.8de741e4.png": "/portfolio/static/media/utoronto.8de741e4.png"
   },
@@ -32,6 +33,6 @@
     "static/css/2.eb35f815.chunk.css",
     "static/js/2.c5560f9c.chunk.js",
     "static/css/main.f9854638.chunk.css",
-    "static/js/main.220fcbe3.chunk.js"
+    "static/js/main.72897fa2.chunk.js"
   ]
 }
